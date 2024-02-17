@@ -20,6 +20,10 @@
             font-optical-sizing: auto;
             font-style: normal;
         }
+
+        .text-color {
+            color: var(--base-white, #1DD100);
+        }
     </style>
 
 </head>
@@ -29,40 +33,96 @@
         <nav>
             <div class="navbar bg-base-100 text-[#030712B3] font-medium text-xl">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a> </li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About</a> </li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">P-Ticket</a>
+                    <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                      <li><a>About</a> </li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a> </li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn text-xl text-[#1DD100] font-bold center">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+                    <a class="btn text-xl text-color font-bold center">Bus <span><img src="images/bus-icon.png"
+                                alt=""></span></a>
                 </div>
-              </div>
+            </div>
         </nav>
+
+        <!-- Banner section  -->
+        <section class="relative bg-[url('images/banner.png')] bg-cover my-10 rounded-3xl">
+            <div class="hero min-h-screen rounded-md">
+                <div class="hero-content text-center">
+                    <div class=" text-center ">
+                        <h1 class=" text-3xl lg:text-5xl font-bold text-white">End-to-End Travel with <br>
+                            <span class="text-color ">Janata Paribahan</span>
+                        </h1>
+                        <p class="py-6 text-white max-w-md  mx-auto">Yes, you can run unit tests and view the results
+                            directly
+                            within the app. The integrated testing features allow for a streamlined .</p>
+                        <button class="btn bg-[#1DD100]">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute -bottom-16 flex justify-around flex-col w-full lg:flex-row ">
+                <div class="flex flex-row justify-center items-center gap-5 w-3/12  h-32 card bg-white  border-b-lime-500 border-b-4 rounded-box place-items-center">
+                    <div>
+                        <img src="images/people.png" alt="people">
+                    </div>
+                    <div class="text-center">
+                        <h2>500k+</h2>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row justify-center items-center gap-5 w-3/12  h-32 card bg-white  border-b-lime-500 border-b-4 rounded-box place-items-center">
+                    <div>
+                        <img src="images/ticket-cupon.png" alt="people">
+                    </div>
+                    <div class="text-center">
+                        <h2>500k+</h2>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-5 w-3/12  h-32 card bg-white border-b-lime-500 border-b-4 rounded-box place-items-center">
+                    <div>
+                        <img src="images/stoppage.png" alt="people">
+                    </div>
+                    <div class="text-center">
+                        <h2>500k+</h2>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
     </header>
     <main>
-        
-    <footer>
 
-    </footer>
+        <footer>
 
-    <script src="js/app.js"></script>
+        </footer>
+
+        <script src="js/app.js"></script>
 </body>
 
 </html>
