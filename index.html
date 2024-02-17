@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pabna Poribahan</title>
-</head>
-<body>
-    <header>
+    <title>Janota Poribahan</title>
+    <!-- Raleway font by google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- daisyUI & tailwind  CDN link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .raleway-font {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="container w-11/12 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 text-[#030712B3] font-medium text-xl">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a> </li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                      <li><a>About</a> </li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-xl text-[#1DD100] font-bold center">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+                </div>
+              </div>
+        </nav>
     </header>
     <main>
-
-    </main>
-    <footer>
         
+    <footer>
+
     </footer>
-    
+
     <script src="js/app.js"></script>
 </body>
+
 </html>
