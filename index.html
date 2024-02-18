@@ -77,7 +77,7 @@
                         <p class="py-6 text-white max-w-md  mx-auto">Yes, you can run unit tests and view the results
                             directly
                             within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100]"><a href="#seat">Get Started</a></button>
+                            <a href="#seat"><button class="btn bg-[#1DD100]">Get Started</button></a>
                     </div>
                 </div>
             </div>
@@ -328,14 +328,15 @@
                         <h2 class="text-2xl text-[#030712] p-4 font-bold">Select Your Seat</h2>
                         <!-- store container -->
 
-                         <!-- coupon container  -->
+                        <!-- coupon container  -->
                         <div>
 
                             <label class="input input-bordered flex justify-end pr-0 ">
-                                <input type="text" class="grow" placeholder="Have any coupon?" /><button class="btn  bg-[#1DD100] text-white font-bold" >Apply</button></label>
+                                <input type="text" class="grow" placeholder="Have any coupon?" /><button
+                                    class="btn  bg-[#1DD100] text-white font-bold">Apply</button></label>
                         </div>
-                       <!-- Passenger info  -->
-                        <div >
+                        <!-- Passenger info  -->
+                        <div>
 
                             <label class="form-control w-full max-w-xs">
                                 <div class="label">
@@ -358,8 +359,9 @@
                                 <input type="text" placeholder="Enter your email id"
                                     class="input input-bordered w-full max-w-xs" />
                             </label>
-                            <button class="btn w-full mt-10 bg-[#1DD100] text-white font-bold btn-xs sm:btn-sm md:btn-md lg:btn-lg">Next</button>
-                            
+                            <button
+                                class="btn w-full mt-10 bg-[#1DD100] text-white font-bold btn-xs sm:btn-sm md:btn-md lg:btn-lg">Next</button>
+
                             <div class="flex justify-between mt-5">
                                 <p>Terms and Conditions</p>
                                 <p>Cancellation Policy</p>
@@ -377,8 +379,34 @@
         </section>
     </main>
 
-    <footer>
-
+    <footer class=" text-white " >
+        <div class=" p-5 lg:p-20 justify-between items-center bg-neutral text-neutral-content">
+            <div class="flex justify-between items-center">
+                <aside class="items-center  lg:grid-flow-row">
+                    <h2 class="text-xl lg:text-4xl font-extrabold">P-Ticket</h2>
+                    <p>P-Ticket is a digital platform to make your<br> daily commuting better.</p>
+                </aside>
+                <nav class="grid-flow-row gap-4 md:place-self-center md:justify-self-end">
+        
+                    <h2>Download our app</h2>
+                    <img class="my-5" src="images/playstore.png" alt="playstore">
+                   
+                </nav>
+            </div>
+            <hr class="my-5">
+            <div class="flex flex-col lg:flex-row lg:justify-evenly lg:items-center my-10">
+                <div>
+                    <h2>@all rights reserved, <br> P-Ticket services limited.2024</h2>
+                </div>
+                <div class="flex justify-center items-center gap-10">
+                    <h3>condition</h3>
+                    <h3>Return & refund policy</h3>
+                    <h3>Privacy policy</h3>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-white">
+        
     </footer>
 
     <script src="js/app.js"></script>
