@@ -24,6 +24,16 @@
         .text-color {
             color: var(--base-white, #1DD100);
         }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            list-style: numeric;
+
+        }
     </style>
 
 </head>
@@ -77,7 +87,7 @@
                         <p class="py-6 text-white max-w-md  mx-auto">Yes, you can run unit tests and view the results
                             directly
                             within the app. The integrated testing features allow for a streamlined .</p>
-                            <a href="#seat"><button class="btn bg-[#1DD100]">Get Started</button></a>
+                        <a href="#seat"><button class="btn bg-[#1DD100]">Get Started</button></a>
                     </div>
                 </div>
             </div>
@@ -167,11 +177,11 @@
                     </div>
         </section>
         <div class=" text-center ">
-            <button class=" btn text-color border-2 border-[#1DD100]">See All Offers</button>
+            <button class=" btn text-color border-[2px] border-[#1DD100]">See All Offers</button>
         </div>
 
         <!-- info section  -->
-        <section id="seat" class="my-10">
+        <section id="seat" class="my-10 rounded-xl border-2 border-[#1DD100]">
             <div class=" text-center ">
                 <h1 class=" text-3xl lg:text-5xl font-bold text-black">Janata Paribahan </h1>
                 <p class="py-6 text-[#03071266]  max-w-md  mx-auto">Yes, you can run unit tests and view the results
@@ -227,7 +237,7 @@
                             <img src="images/fare.png" alt="">
                         </div>
                         <div>
-                            <h2 class="card-title text-xl font-bold">550 Taka</h2>
+                            <h2 class="card-title text-xl font-bold"><span id="ticket-price">550</span> Taka</h2>
                             <h4 class="text-[#03071266]">Per Seat</h4>
                         </div>
                     </div>
@@ -263,77 +273,83 @@
                         <kbd class="kbd"><img src="images/tabler-icon-steering-wheel.png" alt=""></kbd>
 
                         <kbd class="kbd bg-white border-none">A</kbd>
-                        <kbd class="kbd">A1</kbd>
-                        <kbd class="kbd">A2</kbd>
-                        <kbd class="kbd">A3</kbd>
-                        <kbd class="kbd">A4</kbd>
+                        <button class="kbd">A1</button>
+                        <button class="kbd">A2</button>
+                        <button class="kbd">A3</button>
+                        <button class="kbd">A4</button>
 
                         <kbd class="kbd bg-white border-none">B</kbd>
-                        <kbd class="kbd">B1</kbd>
-                        <kbd class="kbd">B2</kbd>
-                        <kbd class="kbd">B3</kbd>
-                        <kbd class="kbd">B4</kbd>
+                        <button class="kbd">B1</button>
+                        <button class="kbd">B2</button>
+                        <button class="kbd">B3</button>
+                        <button class="kbd">B4</button>
 
                         <kbd class="kbd bg-white border-none">C</kbd>
-                        <kbd class="kbd">C1</kbd>
-                        <kbd class="kbd">C2</kbd>
-                        <kbd class="kbd">C3</kbd>
-                        <kbd class="kbd">C4</kbd>
+                        <button class="kbd">C1</button>
+                        <button class="kbd">C2</button>
+                        <button class="kbd">C3</button>
+                        <button class="kbd">C4</button>
 
                         <kbd class="kbd bg-white border-none">D</kbd>
-                        <kbd class="kbd">D1</kbd>
-                        <kbd class="kbd">D2</kbd>
-                        <kbd class="kbd">D3</kbd>
-                        <kbd class="kbd">D4</kbd>
+                        <button class="kbd">D1</button>
+                        <button class="kbd">D2</button>
+                        <button class="kbd">D3</button>
+                        <button class="kbd">D4</button>
 
                         <kbd class="kbd bg-white border-none">E</kbd>
-                        <kbd class="kbd">E1</kbd>
-                        <kbd class="kbd">E2</kbd>
-                        <kbd class="kbd">E3</kbd>
-                        <kbd class="kbd">E4</kbd>
+                        <button class="kbd">E1</button>
+                        <button class="kbd">E2</button>
+                        <button class="kbd">E3</button>
+                        <button class="kbd">E4</button>
 
                         <kbd class="kbd bg-white border-none">F</kbd>
-                        <kbd class="kbd">F1</kbd>
-                        <kbd class="kbd">F2</kbd>
-                        <kbd class="kbd">F3</kbd>
-                        <kbd class="kbd">F4</kbd>
+                        <button class="kbd">F1</button>
+                        <button class="kbd">F2</button>
+                        <button class="kbd">F3</button>
+                        <button class="kbd">F4</button>
 
                         <kbd class="kbd bg-white border-none">G</kbd>
-                        <kbd class="kbd">G1</kbd>
-                        <kbd class="kbd">G2</kbd>
-                        <kbd class="kbd">G3</kbd>
-                        <kbd class="kbd">G4</kbd>
+                        <button class="kbd">G1</button>
+                        <button class="kbd">G2</button>
+                        <button class="kbd">G3</button>
+                        <button class="kbd">G4</button>
 
                         <kbd class="kbd bg-white border-none">H</kbd>
-                        <kbd class="kbd">H1</kbd>
-                        <kbd class="kbd">H2</kbd>
-                        <kbd class="kbd">H3</kbd>
-                        <kbd class="kbd">H4</kbd>
+                        <button class="kbd">H1</button>
+                        <button class="kbd">H2</button>
+                        <button class="kbd">H3</button>
+                        <button class="kbd">H4</button>
 
                         <kbd class="kbd bg-white">I</kbd>
-                        <kbd class="kbd">I1</kbd>
-                        <kbd class="kbd">I2</kbd>
-                        <kbd class="kbd">I3</kbd>
-                        <kbd class="kbd">I4</kbd>
+                        <button class="kbd">I1</button>
+                        <button class="kbd">I2</button>
+                        <button class="kbd">I3</button>
+                        <button class="kbd">I4</button>
 
                         <kbd class="kbd bg-white border-none">J</kbd>
-                        <kbd class="kbd">J1</kbd>
-                        <kbd class="kbd">J2</kbd>
-                        <kbd class="kbd">J3</kbd>
-                        <kbd class="kbd">J4</kbd>
+                        <button class="kbd">J1</button>
+                        <button class="kbd">J2</button>
+                        <button class="kbd">J3</button>
+                        <button class="kbd ">J4</button>
                     </div>
                     <!-- update section  -->
 
                     <div class="w-full p-10 lg:w-3/4 rounded-xl border-l-4 border-dotted ">
                         <h2 class="text-2xl text-[#030712] p-4 font-bold">Select Your Seat</h2>
                         <!-- store container -->
-
+                        <div id="selected-container" class="bg-yellow-100">
+                            <ul>
+                                <li>Seats<span id="cart-count" class="bg-[#1DD100]  rounded-full">0</span></li>
+                                <li>Class</li>
+                                <li>Fare</li>
+                            </ul>
+                        </div>
                         <!-- coupon container  -->
                         <div>
 
                             <label class="input input-bordered flex justify-end pr-0 ">
                                 <input type="text" class="grow" placeholder="Have any coupon?" /><button
-                                    class="btn  bg-[#1DD100] text-white font-bold">Apply</button></label>
+                                 id="apply-btn"   class="btn disabled:opacity-75 bg-[#1DD100] text-white font-bold">Apply</button></label>
                         </div>
                         <!-- Passenger info  -->
                         <div>
@@ -372,14 +388,9 @@
                 </div>
             </div>
         </section>
-
-        <!-- seat section -->
-        <section>
-
-        </section>
     </main>
 
-    <footer class=" text-white " >
+    <footer class=" text-white ">
         <div class=" p-5 lg:p-20 justify-between items-center bg-neutral text-neutral-content">
             <div class="flex justify-between items-center">
                 <aside class="items-center  lg:grid-flow-row">
@@ -387,10 +398,10 @@
                     <p>P-Ticket is a digital platform to make your<br> daily commuting better.</p>
                 </aside>
                 <nav class="grid-flow-row gap-4 md:place-self-center md:justify-self-end">
-        
+
                     <h2>Download our app</h2>
                     <img class="my-5" src="images/playstore.png" alt="playstore">
-                   
+
                 </nav>
             </div>
             <hr class="my-5">
@@ -406,7 +417,7 @@
             </div>
         </div>
         <hr class="bg-white">
-        
+
     </footer>
 
     <script src="js/app.js"></script>
