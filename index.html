@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="raleway-font">
+<body class="raleway-font bg-[#F7F8F8]">
     <header class="container w-[88%] mx-auto">
         <nav>
             <div class="navbar bg-base-100 text-[#030712B3] font-medium text-xl">
@@ -77,7 +77,7 @@
                         <p class="py-6 text-white max-w-md  mx-auto">Yes, you can run unit tests and view the results
                             directly
                             within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100]">Get Started</button>
+                        <button class="btn bg-[#1DD100]"><a href="#seat" >Get Started</a></button>
                     </div>
                 </div>
             </div>
@@ -171,52 +171,164 @@
         </div>
 
         <!-- info section  -->
-        <section>
-            <div class="card lg:w-full   shadow-xl ">
-                <div class="relative   card-body flex  flex-row justify-between items-center">
-                    
-                        <div>
-                            <div class="flex justify-between items-center bg-red-200 gap-x-96">
-                                <div class="flex justify-center items-center gap-5">
-                                    <div>
-                                        <img src="images/bus-logo.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h2 class="font-extrabold text-3xl ">Janata Paribahan</h2>
-                                        <p class=" text-[#03071266] max-w-md  mx-auto">Coach-009-WEB ! AC_Business</p>
-                                    </div>
-                                </div>
-                                <div class="flex justify-center items-center gap-2">
-                                    <div>
-                                        <img src="images/seat-green-filled.png" alt="">
-                                    </div>
-                                    <div>
-                                        <h2 class="font-medium text-xl text-color "><span>40 </span>Seats left</h2>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div>
-                                <!-- seat  -->
-                            </div>
-                        </div>
-                        <!-- ticket price -->
-                        <div>
-                            <div>
-                                <img src="images/fare.png" alt="">
-                            </div>
-                            <div>
-                                <h2 class="card-title text-xl font-bold">550 Taka</h2>
-                                <h4 class="text-[#03071266]">Per Seat</h4>
-                            </div>
-                        </div>
-                        <div class="absolute top-0 bottom-0 right-[30%] lg:right-[15%]  ">
-                            <img class="w-full  object-fill" src="images/info-devider.png" alt="info">
-                        </div>
+        <section id="seat" class="my-10">
+            <div class=" text-center ">
+                <h1 class=" text-3xl lg:text-5xl font-bold text-black">Janata Paribahan </h1>
+                <p class="py-6 text-[#03071266]  max-w-md  mx-auto">Yes, you can run unit tests and view the results
+                    directly
+                    within the app. The integrated testing features allow for a streamlined.</p>
+            </div>
+            <div class="card lg:w-full bg-[#FFFFFF]  shadow-xl ">
+                <div class="relative   card-body flex  flex-col lg:flex-row justify-between items-center">
 
-                      
+                    <div class=" lg:h-[22.30rem] space-y-10">
+                        <div class="flex flex-col lg:flex-row justify-between items-center rounded-md gap-x-96">
+                            <div class="flex flex-col lg:flex-row justify-center items-center gap-5">
+                                <div>
+                                    <img src="images/bus-logo.png" alt="">
+                                </div>
+                                <div>
+                                    <h2 class="font-extrabold text-3xl ">Janata Paribahan</h2>
+                                    <p class=" text-[#03071266]   mx-auto">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
+                                <div>
+                                    <img src="images/seat-green-filled.png" alt="">
+                                </div>
+                                <div>
+                                    <h2 class="font-medium text-xl text-color "><span>40 </span>Seats left</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8]">
+                            <div class="p-5 border-b-2 border-dotted flex justify-between items-center  lg:gap-x-96">
+                                <!-- info cards  -->
+                                <p>Route</p>
+                                <p>Dhaka - Sylhet</p>
+                            </div>
+                            <div class="p-5 border-b-2 border-dotted flex justify-between items-center  lg:gap-x-96">
+                                <!-- info cards  -->
+                                <p>Departure Time</p>
+                                <p>9:00 PM</p>
+                            </div>
+                            <div class="flex flex-col lg:flex-row lg:justify-between items-center">
+                                <button class="btn">Boarding Point - Laxmipur</button>
+
+                                <button class="btn">Dropping Point - Bogura</button>
+                                <button class="btn">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ticket price -->
+                    <div>
+                        <div>
+                            <img src="images/fare.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="card-title text-xl font-bold">550 Taka</h2>
+                            <h4 class="text-[#03071266]">Per Seat</h4>
+                        </div>
+                    </div>
+                    <div class="absolute top-0 bottom-0 hidden lg:block lg:right-[15%]  ">
+                        <img class="w-full  object-fill" src="images/info-devider.png" alt="info">
+                    </div>
+
+
                 </div>
+            </div>
+
+            <!-- seat section -->
+            <h2 >Select Your Seat</h2>
+            <div class="flex justify-between w-2/4 my-10">
+                <div class="flex gap-2">
+                    <img src="images/seat-gray.png" alt="">
+                    <h2>Available</h2>
+                </div>
+                <div class="flex gap-2">
+                    <img src="images/seat-green-filled.png" alt="">
+                    <h2 class="text-color">Selected</h2>
+                </div>
+            </div>
+            <div class="grid grid-col lg:grid-cols-2 justify-between">
+                
+                <div class="grid grid-cols-5 justify-center gap-5 my-1 flex-1">
+                    <kbd></kbd>
+                    <kbd></kbd>
+                    <kbd></kbd>
+                    <kbd></kbd>
+                    <kbd class="kbd"><img src="images/tabler-icon-steering-wheel.png" alt=""></kbd>
+
+                    <kbd class="kbd bg-white border-none">A</kbd>
+                    <kbd class="kbd">A1</kbd>
+                    <kbd class="kbd">A2</kbd>
+                    <kbd class="kbd">A3</kbd>
+                    <kbd class="kbd">A4</kbd>
+
+                    <kbd class="kbd bg-white border-none">B</kbd>
+                    <kbd class="kbd">B1</kbd>
+                    <kbd class="kbd">B2</kbd>
+                    <kbd class="kbd">B3</kbd>
+                    <kbd class="kbd">B4</kbd>
+
+                    <kbd class="kbd bg-white border-none">C</kbd>
+                    <kbd class="kbd">C1</kbd>
+                    <kbd class="kbd">C2</kbd>
+                    <kbd class="kbd">C3</kbd>
+                    <kbd class="kbd">C4</kbd>
+
+                    <kbd class="kbd bg-white border-none">D</kbd>
+                    <kbd class="kbd">D1</kbd>
+                    <kbd class="kbd">D2</kbd>
+                    <kbd class="kbd">D3</kbd>
+                    <kbd class="kbd">D4</kbd>
+
+                    <kbd class="kbd bg-white border-none">E</kbd>
+                    <kbd class="kbd">E1</kbd>
+                    <kbd class="kbd">E2</kbd>
+                    <kbd class="kbd">E3</kbd>
+                    <kbd class="kbd">E4</kbd>
+
+                    <kbd class="kbd bg-white border-none">F</kbd>
+                    <kbd class="kbd">F1</kbd>
+                    <kbd class="kbd">F2</kbd>
+                    <kbd class="kbd">F3</kbd>
+                    <kbd class="kbd">F4</kbd>
+
+                    <kbd class="kbd bg-white border-none">G</kbd>
+                    <kbd class="kbd">G1</kbd>
+                    <kbd class="kbd">G2</kbd>
+                    <kbd class="kbd">G3</kbd>
+                    <kbd class="kbd">G4</kbd>
+
+                    <kbd class="kbd bg-white border-none">H</kbd>
+                    <kbd class="kbd">H1</kbd>
+                    <kbd class="kbd">H2</kbd>
+                    <kbd class="kbd">H3</kbd>
+                    <kbd class="kbd">H4</kbd>
+
+                    <kbd class="kbd bg-white">I</kbd>
+                    <kbd class="kbd">I1</kbd>
+                    <kbd class="kbd">I2</kbd>
+                    <kbd class="kbd">I3</kbd>
+                    <kbd class="kbd">I4</kbd>
+
+                    <kbd class="kbd bg-white border-none">J</kbd>
+                    <kbd class="kbd">J1</kbd>
+                    <kbd class="kbd">J2</kbd>
+                    <kbd class="kbd">J3</kbd>
+                    <kbd class="kbd">J4</kbd>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- seat section -->
+        <section>
+
         </section>
     </main>
 
