@@ -27,12 +27,14 @@
             font-style: normal;
         }
 
-
-
         .inter-font {
             font-family: "Inter", sans-serif;
             font-optical-sizing: auto;
             font-style: normal;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         .text-color {
@@ -73,7 +75,7 @@
                             <li><a>Search</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold">P-Ticket</a>
+                    <a class="text-xl lg:text-4xl font-extrabold">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -84,8 +86,9 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn text-xl text-color font-bold center">Bus <span><img src="images/bus-icon.png"
-                                alt=""></span></a>
+                    <a class="btn text-xl text-color font-bold center">
+                        Bus <span><img src="images/bus-icon.png" alt="Bus"></span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -195,15 +198,15 @@
         </div>
 
         <!-- info section  -->
-        <section id="seat" class="my-10 rounded-xl border-2 border-[#1DD100]">
+        <section id="seat" class="mt-10 pt-10 rounded-t-xl rounded-tr-3xl rounded-tl-3xl border-t-4 border-l-[1px] border-r-[1px] border-[#1DD100]">
             <div class=" text-center ">
                 <h1 class=" text-3xl lg:text-5xl font-bold text-black">Janata Paribahan </h1>
-                <p class="py-6 text-[#03071266]  max-w-md  mx-auto">Yes, you can run unit tests and view the results
+                <p class="py-6 text-[#03071266]  lg:max-w-md  mx-auto">Yes, you can run unit tests and view the results
                     directly
                     within the app. The integrated testing features allow for a streamlined.</p>
             </div>
-            <div class="card lg:w-full bg-[#FFFFFF]  shadow-xl ">
-                <div class="relative   card-body flex  flex-col lg:flex-row justify-between items-center">
+            <div class="card lg:w-11/12 mx-auto bg-[#FFFFFF] ">
+                <div class="relative  card-body flex  flex-col lg:flex-row justify-between items-center">
 
                     <div class=" lg:h-[22.30rem] space-y-10">
                         <div class="flex flex-col lg:flex-row justify-between items-center rounded-md gap-x-96">
@@ -227,16 +230,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-[#F7F8F8]">
-                            <div class="p-5 border-b-2 border-dotted flex justify-between items-center  lg:gap-x-96">
+                        <div class="bg-[#F7F8F8] rounded-3xl p-5">
+                            <div class="p-5 border-b-2  border-dotted flex justify-between items-center">
                                 <!-- info cards  -->
                                 <p>Route</p>
-                                <p>Dhaka - Sylhet</p>
+                                <p class="text-right">Dhaka - Sylhet</p>
                             </div>
-                            <div class="p-5 border-b-2 border-dotted flex justify-between items-center  lg:gap-x-96">
+                            <div class="p-5 border-b-2 border-dotted flex justify-between items-center  ">
                                 <!-- info cards  -->
                                 <p>Departure Time</p>
-                                <p>9:00 PM</p>
+                                <p class="text-right">9:00 PM</p>
                             </div>
                             <div class="flex flex-col lg:flex-row lg:justify-between items-center">
                                 <button class="btn">Boarding Point - Laxmipur</button>
@@ -247,12 +250,12 @@
                         </div>
                     </div>
                     <!-- ticket price -->
-                    <div>
-                        <div>
+                    <div class="space-y-5 ">
+                        <div class="ml-7">
                             <img src="images/fare.png" alt="">
                         </div>
-                        <div>
-                            <h2 class="card-title text-xl font-bold"><span id="ticket-price">550</span> Taka</h2>
+                        <div class="text-center">
+                            <h2 class="card-title text-3xl font-bold"><span id="ticket-price">550</span> Taka</h2>
                             <h4 class="text-[#03071266]">Per Seat</h4>
                         </div>
                     </div>
@@ -265,7 +268,7 @@
             </div>
 
             <!-- seat section -->
-            <div class="my-20 bg-white rounded-xl  p-24">
+            <div class="lg:mt-20 w-full lg:w-11/12 mx-auto bg-white rounded-xl  lg:p-24">
                 <h2 class="text-2xl text-[#030712] p-4 font-bold">Select Your Seat</h2>
                 <div class="flex justify-between lg:w-2/4 p-4 border-dotted border-y-2 my-10">
                     <div class="flex gap-2">
@@ -280,7 +283,7 @@
                 <!--total seat -->
                 <div class="gap-20  grid grid-col lg:grid-cols-2 justify-between">
 
-                    <div class="grid grid-cols-5 justify-center gap-5  my-1 flex-1">
+                    <div class="grid grid-cols-5 justify-center gap-5 p-2 my-1 flex-1">
                         <kbd></kbd>
                         <kbd></kbd>
                         <kbd></kbd>
@@ -335,7 +338,7 @@
                         <button class="kbd">H3</button>
                         <button class="kbd">H4</button>
 
-                        <kbd class="kbd bg-white">I</kbd>
+                        <kbd class="kbd bg-white border-none">I</kbd>
                         <button class="kbd">I1</button>
                         <button class="kbd">I2</button>
                         <button class="kbd">I3</button>
@@ -349,13 +352,14 @@
                     </div>
                     <!-- update section  -->
 
-                    <div class="w-full p-10 lg:w-3/4 rounded-xl border-l-4 border-dotted ">
+                    <div class="w-full p-3 lg:p-10 lg:w-3/4 rounded-xl border-l-4 border-dotted ">
                         <h2 class="text-2xl text-[#030712] p-4 font-bold">Select Your Seat</h2>
                         <!-- store container -->
                         <div id="selected-container" class=" border-b-2 border-dotted">
                             <ul>
                                 <li>
-                                    <p>Seats <sup><span id="cart-count" class="bg-[#1DD100]  rounded-full">0</span></sup></p>
+                                    <p>Seats <sup><span id="cart-count"
+                                                class="bg-[#1DD100]  rounded-full">0</span></sup></p>
                                 </li>
                                 <li>
                                     <p>Class</p>
@@ -378,7 +382,8 @@
                                 <button id="apply-btn" disabled
                                     class="btn bg-[#1DD100] text-white font-bold">Apply</button>
                             </label>
-                            <div id="discount-element" class="hidden border-b-2 border-dotted inter-font flex justify-between items-center font-semibold text-black">
+                            <div id="discount-element"
+                                class="hidden border-b-2 border-dotted inter-font flex justify-between items-center font-semibold text-black">
                                 <h3>Discount</h3>
                                 <h3>BDT <span id="discount">0</span></h3>
                             </div>
@@ -438,7 +443,8 @@
                     We are working hard to find the best service and deals for you.
                 </h4>
                 <p class="text-[#4A4A4A] font-light">Shortly you will find a confirmation in your email.</p>
-                <button onclick="showHome()" id="continue-btn" class="  btn bg-[#27AE60] p-5 rounded-full text-white w-40">Continue</button>
+                <button onclick="showHome()" id="continue-btn"
+                    class="  btn bg-[#27AE60] p-5 rounded-full text-white w-40">Continue</button>
             </div>
         </div>
     </div>
