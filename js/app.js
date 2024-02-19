@@ -1,19 +1,33 @@
-// set innerText 
+// set innerText by function
 function setInnerText(elementId, value) {
     document.getElementById(elementId).innerText = value;
 }
-// hidden the element
+// hidden the element by function
 function hiddenItem(elementId){
     const homeScreen = document.getElementById(elementId);
     homeScreen.classList.add('hidden');
 }
-    // show the element
+    // show the element by function
 function showItem(elementId){
     const playScreen = document.getElementById(elementId);
     playScreen.classList.remove('hidden');
 }
-
-// calculation the total cost 
+// show the modal by clicked next button
+function showModal(){
+    hiddenItem('main');
+    hiddenItem('footer');
+    hiddenItem('head');
+    showItem('modal');
+}
+// show the home page by clicked continue button
+function showHome(){
+    hiddenItem('modal');
+    showItem('main');
+    showItem('footer');
+    showItem('head');
+    
+}
+// calculation the total cost by function
 function totalCost(elementId, value) {
     const getTotalCost = document.getElementById(elementId);
     const totalCostText = getTotalCost.innerText;
@@ -21,6 +35,8 @@ function totalCost(elementId, value) {
     const sum = totalCost + parseInt(value);
     return sum;
 }
+
+
 //apply coupon & calculate grand total
 // get the  apply btn by id 
 const getApplyBtn = document.getElementById('apply-btn');
@@ -56,30 +72,6 @@ getApplyBtn.addEventListener('click', function () {
          return alert('Invalid coupon')
      }   
 });
-
-function showModal(){
-    hiddenItem('main');
-    hiddenItem('footer');
-    hiddenItem('head');
-    showItem('modal');
-}
-function showHome(){
-    hiddenItem('modal');
-    showItem('main');
-    showItem('footer');
-    showItem('head');
-    
-}
-/*
-// hidden the homeScreen & show the modal 
-// get the  apply btn by id 
-const getPassengerBtn = document.getElementById('passenger-btn');
-getApplyBtn.addEventListener('click', function (){
-    hiddenItem('main');
-    hiddenItem('footer');
-    showItem('modal');
-})
-*/
 const seats = document.getElementsByClassName('kbd');
 let count = 0;
 const seatText = document.getElementById('total-seat').innerText;
@@ -88,9 +80,20 @@ for (let seat of seats) {
     seat.addEventListener('click', function (event) {
         totalSeat -= 1;
         count += 1;
+        // checking condition for enable next button 
         if (count === 1) {
-            const getPassenger = document.getElementById('passenger-btn');
-            getPassenger.removeAttribute('disabled');
+            // getting the length of phone number field.
+            const getNumberField = document.getElementById('passenger-number-field');
+            getNumberField.addEventListener('keyup',function(event){
+                const numberFieldText = event.target.value;
+              const  numberFieldLength = numberFieldText.length;
+              // checking the length of phone number field.
+                if(numberFieldLength > 0){
+                    const getPassenger = document.getElementById('passenger-btn');
+                    getPassenger.removeAttribute('disabled');
+                }
+                console.log(numberFieldLength);
+            }); 
         }
         else if (count === 4) {
             const getApply = document.getElementById('apply-btn');
@@ -118,7 +121,6 @@ for (let seat of seats) {
         li2.innerText = 'economy';
         const li3 = document.createElement('li');
         li3.innerText = price;
-
         // marked the selected item
         event.target.style.backgroundColor = '#1DD100';
         // set disable button
