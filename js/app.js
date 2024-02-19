@@ -2,6 +2,17 @@
 function setInnerText(elementId, value) {
     document.getElementById(elementId).innerText = value;
 }
+// hidden the element
+function hiddenItem(elementId){
+    const homeScreen = document.getElementById(elementId);
+    homeScreen.classList.add('hidden');
+}
+    // show the element
+function showItem(elementId){
+    const playScreen = document.getElementById(elementId);
+    playScreen.classList.remove('hidden');
+}
+
 // calculation the total cost 
 function totalCost(elementId, value) {
     const getTotalCost = document.getElementById(elementId);
@@ -10,15 +21,15 @@ function totalCost(elementId, value) {
     const sum = totalCost + parseInt(value);
     return sum;
 }
-//apply coupon
-// step-1: get the input field by id 
+//apply coupon & calculate grand total
+// get the input field by id 
 const getApplyBtn = document.getElementById('apply-btn');
 getApplyBtn.addEventListener('click', function () {
     const getCouponField = document.getElementById('input-area');
     const coupon = getCouponField.value;
     getCouponField.value = '';
     // console.log(coupon);
-     // step-1:calculate get grand total
+     // calculate get grand total
      const getTotalPrice = document.getElementById('total-price');
      const totalPriceText = getTotalPrice.innerText;
      const getPrice = parseInt(totalPriceText);
@@ -27,16 +38,22 @@ getApplyBtn.addEventListener('click', function () {
          //set total price  in the grand total container after discount
          const discount = (getPrice * 20) / 100;
          setInnerText('grand-total', getPrice - discount);
+         hiddenItem('coupon-element');
+         setInnerText('discount', discount);
+         showItem('discount-element');
      }
      else if (coupon === 'NEW15') {
          //set total price  in the grand total container after discount
          const discount = (getPrice * 15) / 100;
          setInnerText('grand-total', getPrice - discount);
+         hiddenItem('coupon-element');
+         setInnerText('discount', discount);
+         showItem('discount-element');
      }
      else {
          //set total price in the grand total container
          setInnerText('grand-total', getPrice);
-         return alert('Please inter the valid coupon code')
+         return alert('Invalid coupon')
      }
     
 });
