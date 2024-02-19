@@ -146,7 +146,7 @@
             </div>
         </div>
     </header>
-    <main id="mail" class="container w-[88%] mx-auto">
+    <main id="main" class="container w-[88%] mx-auto">
         <!-- coupon cards section  -->
         <section class=" my-10  ">
             <h1 class="text-center  text-4xl font-bold mb-20">Best offers for you</h1>
@@ -412,7 +412,7 @@
                                 <input type="text" placeholder="Enter your email id"
                                     class="input input-bordered w-full max-w-xs" />
                             </label>
-                            <button id="passenger-btn" disabled
+                            <button id="passenger-btn" onclick="ab()" disabled
                                 class="btn w-full mt-10 bg-[#1DD100] text-white font-bold btn-xs sm:btn-sm md:btn-md lg:btn-lg">Next</button>
 
                             <div class="flex justify-between mt-5">
@@ -427,7 +427,7 @@
         </section>
     </main>
     <!-- modal section  -->
-    <div id="modal" class=" hidden flex justify-center items-center bg-[#F2F1F1]">
+    <div id="modal" class=" hidden flex justify-center items-center h-svh bg-[#F2F1F1]">
         <div class="bg-white rounded-xl p-24 text-center">
             <div class="flex justify-center items-center gap-y-4 flex-col">
                 <img src="images/success.png" alt="success">
@@ -438,7 +438,7 @@
                     We are working hard to find the best service and deals for you.
                 </h4>
                 <p class="text-[#4A4A4A] font-light">Shortly you will find a confirmation in your email.</p>
-                <button class="  btn bg-[#27AE60] p-5 rounded-full text-white w-40">Continue</button>
+                <button id="continue-btn" class="  btn bg-[#27AE60] p-5 rounded-full text-white w-40">Continue</button>
             </div>
         </div>
     </div>

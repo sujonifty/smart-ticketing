@@ -22,7 +22,7 @@ function totalCost(elementId, value) {
     return sum;
 }
 //apply coupon & calculate grand total
-// get the input field by id 
+// get the  apply btn by id 
 const getApplyBtn = document.getElementById('apply-btn');
 getApplyBtn.addEventListener('click', function () {
     const getCouponField = document.getElementById('input-area');
@@ -54,44 +54,24 @@ getApplyBtn.addEventListener('click', function () {
          //set total price in the grand total container
          setInnerText('grand-total', getPrice);
          return alert('Invalid coupon')
-     }
-    
+     }   
 });
 
-
-
-/*
-// calculation the grand total cost 
-function grandTotal(coupon) {
-    // step-1:same ways to get grand total
-    const getTotalPrice = document.getElementById('total-price');
-    const totalPriceText = getTotalPrice.innerText;
-    const getPrice = parseInt(totalPriceText);
-
-    if (coupon === 'Couple 20') {
-        //set total price  in the grand total container after discount
-        const discount = (getPrice * 20) / 100;
-        setInnerText('grand-total', getPrice - discount);
-    }
-    else if (coupon === 'NEW15') {
-        //set total price  in the grand total container after discount
-        const discount = (getPrice * 15) / 100;
-        setInnerText('grand-total', getPrice - discount);
-    }
-    else {
-        //set total price in the grand total container
-        setInnerText('grand-total', getPrice);
-        return alert('Please inter the valid coupon code')
-    }
+function ab(){
+    hiddenItem('main');
+    hiddenItem('footer');
+    hiddenItem('head');
+    showItem('modal');
 }
-*/
 /*
-// hidden the homeScreen
-const homeScreen = document.getElementById('main');
-    homeScreen.classList.add('hidden');
-    // show the modal
-    const playScreen = document.getElementById('modal');
-    playScreen.classList.remove('hidden');
+// hidden the homeScreen & show the modal 
+// get the  apply btn by id 
+const getPassengerBtn = document.getElementById('passenger-btn');
+getApplyBtn.addEventListener('click', function (){
+    hiddenItem('main');
+    hiddenItem('footer');
+    showItem('modal');
+})
 */
 const seats = document.getElementsByClassName('kbd');
 let count = 0;
