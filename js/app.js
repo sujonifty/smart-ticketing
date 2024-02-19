@@ -57,11 +57,18 @@ getApplyBtn.addEventListener('click', function () {
      }   
 });
 
-function ab(){
+function showModal(){
     hiddenItem('main');
     hiddenItem('footer');
     hiddenItem('head');
     showItem('modal');
+}
+function showHome(){
+    hiddenItem('modal');
+    showItem('main');
+    showItem('footer');
+    showItem('head');
+    
 }
 /*
 // hidden the homeScreen & show the modal 
