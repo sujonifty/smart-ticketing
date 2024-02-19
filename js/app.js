@@ -25,6 +25,7 @@ function showHome(){
     showItem('main');
     showItem('footer');
     showItem('head');
+    location.reload();
     
 }
 // calculation the total cost by function
