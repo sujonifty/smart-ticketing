@@ -118,7 +118,7 @@ for (let seat of seats) {
         const li1 = document.createElement('li');
         li1.innerText = seatName;
         const li2 = document.createElement('li');
-        li2.innerText = 'economy';
+        li2.innerText = 'Economy';
         const li3 = document.createElement('li');
         li3.innerText = price;
         // marked the selected item
